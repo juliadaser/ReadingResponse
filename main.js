@@ -8,6 +8,17 @@ rgb(255, 255, 255) = white
 COLOR INSPIRATION FROM : https://aifont.process.studio/
 */
 
+const Dotenv = require('dotenv-webpack');
+
+module.exports = {
+  // ...other webpack configuration options...
+  plugins: [
+    new Dotenv(), // Load environment variables from a .env file
+    // ...other plugins...
+  ],
+};
+
+
 colorSets = [
   ["rgb(234, 255, 0)", "rgb(0, 0, 0)"],
   ["rgb(20, 31, 245", "rgb(255, 255, 255)"],
