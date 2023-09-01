@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(234, 255, 0);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: arial, sans-serif;
+  font-size: 80px;
+  padding: 10% 20%;
+  text-align: center;
+}
+
+.dotStyle {
+  border-radius: 50%;
+  position: absolute;
+}
