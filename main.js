@@ -98,6 +98,7 @@ function translateText() {
     .then((response) => response.json())
     .then((data) => {
       const translatedText = data.data.translations[0].translatedText;
+      console.log(translatedText)
       document.getElementById("textToTranslate").textContent = translatedText; // updating the text on the website
     });
   .catch((error) => {
