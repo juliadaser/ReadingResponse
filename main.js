@@ -100,4 +100,7 @@ function translateText() {
       const translatedText = data.data.translations[0].translatedText;
       document.getElementById("textToTranslate").textContent = translatedText; // updating the text on the website
     });
+  .catch((error) => {
+      console.error("Translation error:", error);
+    });
 }
