@@ -43,7 +43,6 @@ document.addEventListener("mousemove", (event) => {
 // how to create a span-html element inspired from https://www.tutorialspoint.com/html-dom-span-object#:~:text=The%20HTML%20DOM%20span%20object,and%20getElementById()%20method%20respectively.
 function createDot() {
   randomSize = Math.floor((Math.random() - 0.45) * 22); // random nr between -5 and 5
-  console.log(randomSize);
   var dot = document.createElement("SPAN");
   dot.classList.add("dotStyle"); // adding the css formats
   document.body.appendChild(dot);
@@ -101,7 +100,7 @@ function translateText() {
       const translatedText = data.data.translations[0].translatedText;
 
       // Update the HTML element with the translated text
-      document.getElementById("translatedText").textContent = translatedText;
+      document.getElementById("textToTranslate").textContent = translatedText;
     })
     .catch((error) => {
       console.error("Translation error:", error);
