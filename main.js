@@ -38,8 +38,6 @@ let yCoord;
 document.addEventListener("mousemove", (event) => {
   xCoord = event.clientX;
   yCoord = event.clientY;
-  let coords = [xCoord + ", " + yCoord];
-  coordinatesText.textContent = coords;
 });
 
 // how to create a span-html element inspired from https://www.tutorialspoint.com/html-dom-span-object#:~:text=The%20HTML%20DOM%20span%20object,and%20getElementById()%20method%20respectively.
