@@ -56,7 +56,7 @@ function createDot() {
 
 document.body.addEventListener("click", function () {
   console.log("clicked");
-  translateText();
+  // translateText();
   createDot();
   changeColor();
 });
