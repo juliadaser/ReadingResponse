@@ -93,15 +93,17 @@ function translateText() {
   const apiUrl = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}&source=en&target=${randomLanguage}&q=${encodeURIComponent(
     textToTranslate
   )}`;
-  // making request
+  // Make a request to the Google Translate API
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
+      // Get the translated text from the API response
       const translatedText = data.data.translations[0].translatedText;
-      console.log(translatedText)
-      document.getElementById("textToTranslate").textContent = translatedText; // updating the text on the website
-    });
-  .catch((error) => {
+
+      // Update the HTML element with the translated text
+      document.getElementById("translatedText").textContent = translatedText;
+    })
+    .catch((error) => {
       console.error("Translation error:", error);
     });
 }
